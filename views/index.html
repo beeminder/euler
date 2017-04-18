@@ -1,0 +1,53 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beeminder 2 Project Euler Integration</title>
+    <meta name="description" content="Made with Gomix">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    <header>
+      <h1 style="text-align: center;">
+        Beeminder-to-Project Euler Integration
+      </h1>
+    </header>
+    <div style="margin-bottom: 40px;">&nbsp;</div>
+    <main style="text-align: center;">
+      <p class="bold">Please make sure to become a user at <a href="https://beeminder.com/">Beeminder.com</a> before proceeding with this service</p>
+      <p>In order to integrate your Beeminder account with Project Euler, please click below to login using your Beeminder account</p>
+      <div style="margin-bottom: 40px;">&nbsp;</div>
+      <p style="text-align: center">
+        <a class="btn btn-primary" href="https://www.beeminder.com/apps/authorize?client_id=em381iy7jbodl48fd25mlbsw7&redirect_uri=https://workerbee.gomix.me/connect&response_type=token">
+          Login with your Beeminder account
+        </a>
+      </p>
+    </main>
+    </div>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
