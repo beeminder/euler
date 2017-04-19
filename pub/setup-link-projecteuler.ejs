@@ -1,8 +1,16 @@
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" 
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
+crossorigin="anonymous"></script>
+<script 
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/style.css">
 
 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
@@ -19,7 +27,8 @@
       <% }); %>
     </select>
     <% } else { %>
-      <input class="form-control" type="text" value="<%= goal %>" disabled="disabled" />
+      <input class="form-control" type="text" value="<%= goal %>" 
+             disabled="disabled" />
       <input type="hidden" name="goal" value="<%= goal %>" />
     <% } %>
     <% if(typeof beeminder_error != 'undefined') { %>
@@ -30,8 +39,14 @@
     <label for="link">Your Project Euler public profile username</label>
     <p>
       https://projecteuler.net/profile/
-      <input class="form-control" style="width: 200px; display: inline;" type="text" name="params[username]" value="<%= typeof params=='undefined' ? '' : params['username']  %>" <% if(!goals) { %>disabled="disabled"<% } %>/>
-      <% if(!goals) { %><input type="hidden" name="params[username]" value="<%= typeof params=='undefined' ? '' : params['username']  %>" /><% } %>
+      <input class="form-control" style="width: 200px; display: inline;" 
+             type="text" name="params[username]" 
+             value="<%= typeof params=='undefined' ? '' : params['username']  %>" 
+               <% if(!goals) { %>disabled="disabled"<% } %>/>
+      <% if(!goals) { 
+        %><input type="hidden" name="params[username]" 
+            value="<%= typeof params=='undefined' ? '' : params['username']  %>"/><%
+      } %>
       .txt
     </p>
     <% if(typeof source_error != 'undefined') { %>
@@ -41,13 +56,16 @@
   <% if(score) { %>
   <div class="form-group">
     <label for="score">Current Score in Project Euler</label>
-    <input class="form-control" disabled="disabled" type="text" name="score" value="<%= score %>" />
+    <input class="form-control" disabled="disabled" type="text" name="score" 
+           value="<%= score %>" />
   </div>
   <div class="form-group">
     <label for="start_value">Starting Score (currently in Beeminder)</label>
-    <input class="form-control" type="text" name="start_value" value="<%= start_value %>" />
+    <input class="form-control" type="text" name="start_value" 
+           value="<%= start_value %>" />
   </div>
-  <input type="submit" class="btn btn-success" name="submit" value="Start tracking" />
+  <input type="submit" class="btn btn-success" name="submit" 
+         value="Start tracking" />
   <% } else { %>
   <input type="submit" class="btn btn-success" name="submit" value="Submit" />
   <% } %>

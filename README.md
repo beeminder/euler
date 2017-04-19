@@ -1,12 +1,10 @@
-Welcome to the Gomix BETA
-=========================
+Thanks to Sergii Kalinchuk!
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-Gomix is a developer playground that lets you code a real web-app without the slow setup and deployment steps.
+## Glitch Boilerplate
 
-[About Gomix](https://gomix.com/about)
-
+Click `Show` in the header to see your app live. 
+Updates to your code will instantly deploy and update live.
 
 Your Project
 ------------
@@ -21,7 +19,3 @@ On the front-end,
 - drag in `assets`, like images or music, to add them to your project
 
 
-Made by Fog Creek
------------------
-
-\ ゜o゜)ノ
